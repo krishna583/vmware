@@ -1,7 +1,7 @@
 #Import-Module VMware.VimAutomation.Core
 $vcentername=Read-Host -Prompt "Enter Name/IP of Vcenter" 
 $user= Read-Host -Prompt "Enter the username of the vCenter"
-$Pass = Read-Host -Prompt "Enter the Password of the vCenter"
+$Pass = Read-Host -Prompt "Enter the Pasword of the vCenter"
 $location=get-location
 try{
 connect-viserver $vcentername -User $user -Password $Pass -ErrorAction Stop -WarningAction 0
